@@ -1,0 +1,104 @@
+/* Estilos do toggle de tema claro/escuro */
+
+.theme-toggle {
+  cursor: pointer;
+  display: flex;
+  margin-right: 20px;
+  flex-shrink: 0;
+  align-items: center;
+  height: 30px;
+}
+
+.theme-toggle svg {
+  display: none;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+.light-mode .checkbox-label {
+  background-color: #3c3a3a;
+}
+
+/* Media queries para responsividade do toggle */
+@media screen and (max-width: 610px) {
+  .theme-toggle {
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .checkbox-label {
+    width: 45px;
+    height: 24px;
+  }
+
+  .checkbox-label .ball {
+    width: 20px;
+    height: 20px;
+  }
+
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(21px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .theme-toggle {
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .checkbox-label {
+    width: 40px;
+    height: 22px;
+  }
+
+  .checkbox-label .ball {
+    width: 18px;
+    height: 18px;
+  }
+
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(18px);
+  }
+}

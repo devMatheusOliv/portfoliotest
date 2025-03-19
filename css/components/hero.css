@@ -1,0 +1,144 @@
+/* Estilos do componente hero */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.accent-text {
+  color: #ff3a8b;
+  display: block;
+  margin-top: 5px;
+}
+
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    padding-left: 0;
+  }
+}
+
+.hero-greeting {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.5px;
+}
+
+.hero-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 5px 0 10px 0;
+  background: linear-gradient(to right, #ffffff, #ff8c51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.hero-description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 6px;
+  max-width: 100%;
+  letter-spacing: 0.2px;
+}
+
+.hero-contact {
+  margin-top: 10px;
+}
+
+.hero-contact .hero-description {
+  margin-bottom: 5px;
+}
+
+.hero-contact strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hero-image-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1 0 auto;
+  margin-top: -80px;
+  position: relative;
+  z-index: 2;
+  padding-right: 0;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    order: 1;
+    margin-top: -60px;
+    margin-bottom: 20px;
+  }
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-wrapper-img {
+  width: 380px;
+  object-fit: cover;
+  margin-left: 0;
+  object-position: center;
+  transition: all 0.5s ease;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+  max-height: 380px;
+  transform: translateX(0) translateY(-140px);
+
+  @media screen and (max-width: 991px) {
+    width: 320px;
+    margin-left: 0;
+    transform: translateX(0) translateY(-120px);
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 280px;
+    margin-top: 0;
+    margin-left: 0;
+    transform: translateX(0) translateY(-40px);
+    order: 1;
+  }
+
+  @media screen and (max-width: 570px) {
+    width: 250px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 200px;
+  }
+}
+
+.content-wrapper-img:hover {
+  transform: translateY(-150px);
+
+  @media screen and (max-width: 991px) {
+    transform: translateY(-130px);
+  }
+
+  @media screen and (max-width: 768px) {
+    transform: translateY(-50px);
+  }
+}
