@@ -51,7 +51,7 @@ portfolio-test/
 
 1. Clone o repositório:
    ```
-   git clone https://github.com/devmatheusoliv/portfolio-test.git
+   git clone https://github.com/devmatheusoliv/portfoliotest.git
    ```
 2. Abra o arquivo `index.html` em qualquer navegador moderno
 
